@@ -56,7 +56,7 @@ const defaultAnswers = () => {
     const item = {
       id: id,
       type: type,
-      answer: 0
+      answer: ""
     };
     array.push(item);
   }
