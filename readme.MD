@@ -1,3 +1,3 @@
-### Oblicanie EPQ-----------
+# Oblicanie KWI-----------
 
-# Aplikacja oblczająca EPQ-----------
+###S Aplikacja oblczająca KWI-----------
