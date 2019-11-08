@@ -560,7 +560,7 @@ body.no-scroll {
   height: 300px;
   margin-top: 10px;
   margin: 10px 0;
-  background: url("/svg/result-graphic.svg") center no-repeat;
+  background: url("../svg/result-graphic.svg") center no-repeat;
   background-size: contain;
 }
 

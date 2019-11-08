@@ -56,7 +56,7 @@ const defaultAnswers = () => {
     const item = {
       id: id,
       type: type,
-      answer: ""
+      answer: null
     };
     array.push(item);
   }
@@ -84,36 +84,36 @@ const render = array => {
             <li>${id}</li>
             <li>
               <input id="answer-${id}-0" data-key="${id}" type="radio" name="answer-${id}" ${
-          answer == 0 ? "checked" : ""
+          answer === 0 ? "checked" : ""
         } value="0">
               <label for="answer-${id}-0">0</label>
             </li><li>
             <input id="answer-${id}-1" data-key="${id}" type="radio" name="answer-${id}" ${
-          answer == 1 ? "checked" : ""
+          answer === 1 ? "checked" : ""
         } value="1">
             <label for="answer-${id}-1">1</label>
           </li>
             <li>
               <input id="answer-${id}-2" data-key="${id}" type="radio" name="answer-${id}" ${
-          answer == 2 ? "checked" : ""
+          answer === 2 ? "checked" : ""
         } value="2">
               <label for="answer-${id}-2">2</label>
             </li>
             <li>
               <input id="answer-${id}-3" data-key="${id}" type="radio" name="answer-${id}" ${
-          answer == 3 ? "checked" : ""
+          answer === 3 ? "checked" : ""
         } value="3">
               <label for="answer-${id}-3">3</label>
             </li>
             <li>
               <input id="answer-${id}-4" data-key="${id}" type="radio" name="answer-${id}" ${
-          answer == 4 ? "checked" : ""
+          answer === 4 ? "checked" : ""
         } value="4">
               <label for="answer-${id}-4">4</label>
             </li>
             <li>
               <input id="answer-${id}-5" data-key="${id}" type="radio" name="answer-${id}" ${
-          answer == 5 ? "checked" : ""
+          answer === 5 ? "checked" : ""
         } value="5">
               <label for="answer-${id}-5">5</label>
             </li>

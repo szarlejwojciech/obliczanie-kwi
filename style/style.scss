@@ -80,6 +80,7 @@ body {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+
       .answer-box {
         // width: 100%;
         flex: 1;
@@ -88,6 +89,7 @@ body {
         background: white;
         margin: 5px;
         box-shadow: 0 7px 18px -4px rgba(0, 0, 0, 0.17);
+
         ul {
           display: flex;
           list-style-type: none;
@@ -95,7 +97,7 @@ body {
           width: inherit;
           justify-content: space-evenly;
 
-          li + li {
+          li+li {
             margin-left: 10px;
           }
 
@@ -104,26 +106,31 @@ body {
               background: $horrible;
             }
           }
+
           li:nth-of-type(3) {
             label {
               background: $verybad;
             }
           }
+
           li:nth-of-type(4) {
             label {
               background: $wrong;
             }
           }
+
           li:nth-of-type(5) {
             label {
               background: $medium;
             }
           }
+
           li:nth-of-type(6) {
             label {
               background: $well;
             }
           }
+
           li:nth-of-type(7) {
             label {
               background: $verygood;
@@ -170,6 +177,7 @@ body {
                 border-radius: inherit;
                 box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
               }
+
               &::after {
                 top: 50%;
                 left: 50%;
@@ -183,6 +191,7 @@ body {
                 transition: transform 0.2s ease-out;
               }
             }
+
             input {
               opacity: 0;
               pointer-events: none;
@@ -190,14 +199,14 @@ body {
               background: red;
               border: transparent;
 
-              &:focus + label,
-              &:hover + label {
+              &:focus+label,
+              &:hover+label {
                 outline: rgba(0, 0, 0, 0.2) 3px solid;
                 outline-offset: 2px;
                 opacity: 0.7;
               }
 
-              &:checked + label {
+              &:checked+label {
                 opacity: 1;
                 box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.5),
                   inset 0 1px 2px rgba(255, 255, 255, 0.8);
@@ -430,20 +439,24 @@ body {
                 letter-spacing: 2px;
                 text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
               }
+
               span {
                 flex: 1;
                 box-shadow: 0 0 0 1px #e6e6e6;
                 line-height: 35px;
                 background: #fff;
+
                 .answer-number {
                   font-weight: 700;
                   box-shadow: none;
                 }
               }
+
               &:nth-of-type(n + 1) {
                 span:first-of-type {
                   flex: 3;
                 }
+
                 span:last-of-type {
                   flex: 1;
                 }
@@ -478,13 +491,14 @@ body {
               background: $kinestheticBg;
             }
           }
+
           .result-chart {
             position: relative;
             width: 300px;
             height: 300px;
             margin-top: 10px;
             margin: $padding 0;
-            background: url("/svg/result-graphic.svg") center no-repeat;
+            background: url("../svg/result-graphic.svg") center no-repeat;
             background-size: contain;
 
             .points {
@@ -500,43 +514,56 @@ body {
               li {
                 &:nth-child(1) {
                   transform: translateY(-50%) rotate(0deg);
+
                   .point-box {
                     transform: translateX(50%) rotate(-0deg);
                     background: #000;
                   }
                 }
+
                 &:nth-child(2) {
                   transform: translateY(-50%) rotate(51.4deg);
+
                   .point-box {
                     transform: translateX(50%) rotate(-51.4deg);
                   }
                 }
+
                 &:nth-child(3) {
                   transform: translateY(-50%) rotate(102.8deg);
+
                   .point-box {
                     transform: translateX(50%) rotate(-102.8deg);
                   }
                 }
+
                 &:nth-child(4) {
                   transform: translateY(-50%) rotate(154.3deg);
+
                   .point-box {
                     transform: translateX(50%) rotate(-154.3deg);
                   }
                 }
+
                 &:nth-child(5) {
                   transform: translateY(-50%) rotate(205.7deg);
+
                   .point-box {
                     transform: translateX(50%) rotate(-205.7deg);
                   }
                 }
+
                 &:nth-child(6) {
                   transform: translateY(-50%) rotate(257.1deg);
+
                   .point-box {
                     transform: translateX(50%) rotate(-257.1deg);
                   }
                 }
+
                 &:nth-child(7) {
                   transform: translateY(-50%) rotate(308.6deg);
+
                   .point-box {
                     transform: translateX(50%) rotate(-308.6deg);
                   }
@@ -556,6 +583,7 @@ body {
                   left: 0;
                   width: 80%;
                   height: 100%;
+
                   .point-box {
                     position: absolute;
                     top: 0;
@@ -573,6 +601,7 @@ body {
                 }
               }
             }
+
             .path {
               position: absolute;
               top: 0.6%;
@@ -597,16 +626,19 @@ body {
       width: 4em;
       height: 4em;
     }
+
     .result-box .content .boxes .box {
       flex-grow: 1;
     }
   }
 }
+
 @media screen and (min-width: 620px) {
   .app {
     h1 {
       font-size: 32px;
     }
+
     section {
       h3 {
         font-size: 20px;
@@ -621,6 +653,7 @@ body {
         }
       }
     }
+
     $margin: 10px;
 
     .result-box .content {
@@ -630,6 +663,7 @@ body {
 
       .boxes {
         .column {
+
           .box,
           .result-chart {
             width: calc(50% - 10px * 2);
@@ -639,6 +673,7 @@ body {
             font-size: 15px;
             flex-grow: 1;
           }
+
           .box .wrapper {
             h3 {
               font-size: 15px;
@@ -648,9 +683,11 @@ body {
               font-size: 14px;
             }
           }
+
           &.column-right {
             .result-chart {
               padding: 0;
+
               .chart-box {
                 width: 10px;
                 height: 10px;
@@ -661,6 +698,7 @@ body {
                 left: 20%;
               }
             }
+
             .box {
               align-self: flex-start;
             }
@@ -676,6 +714,7 @@ body {
     h1 {
       font-size: 34px;
     }
+
     section {
       .answers .answer-box {
         flex: 0 2 0;
@@ -685,6 +724,7 @@ body {
     }
   }
 }
+
 @media screen and (min-width: 965px) {
   .app {
     h1 {
@@ -704,21 +744,25 @@ body {
       padding: $padding;
       max-width: 930px;
       margin: 0 auto;
+
       h2 {
         font-size: 25px;
       }
 
       .boxes {
         margin-top: 0;
+
         .column {
           .box {
             .wrapper {
               height: 36px;
+
               h3 {
                 font-size: 18px;
                 font-weight: 700;
                 letter-spacing: 1px;
               }
+
               span {
                 height: 36px;
                 line-height: 36px;
@@ -728,6 +772,7 @@ body {
               }
             }
           }
+
           .result-chart {
             height: 330px;
             margin: $padding;
@@ -737,12 +782,14 @@ body {
     }
   }
 }
+
 @media screen and (min-width: 1150px) {
   $margim: 10px;
 
   .app .result-box {
     max-width: 1100px;
     width: 100%;
+
     .content {
       padding: $margim * 4;
       width: 100%;
@@ -752,20 +799,25 @@ body {
         width: 100%;
         max-width: none;
         flex-direction: row;
+
         .column {
           flex: 2 0 66.666%;
+
           .box {
             margin: $margim;
             padding: $margim * 1.5;
             width: calc(50% - 20px);
             max-width: 327px;
           }
+
           &.column-right {
             flex-direction: column;
             flex: 1 0 33.333%;
+
             .box {
               width: calc(100% - 20px);
             }
+
             .result-chart {
               margin: $margim;
               margin-top: 40px;
